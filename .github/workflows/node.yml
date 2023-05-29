@@ -6,6 +6,8 @@ on:
    branches: [ main ]
 jobs:
   build:
+    env:
+      CI: false
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
